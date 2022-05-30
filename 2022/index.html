@@ -3,49 +3,100 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Responsive Navigation Demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="styles/sample.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="International student collaboration betwen IUPUI and HH.">
+    <meta name="keywords" content="IUPUI, HH, collab, collaboration, Indiana University, Haaga Helia">
+    <title>IUPUI + HH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <div class="grid-container"><!-- BEGIN GRID CONTAINER  -->
         <header>
-            <h1>Header Goes Here</h1>
+            <h1>IUPUI + HH</h1>
+            <p>International collaboration</p>
         </header>
 
-        <nav><h2>Menu Goes Here</h2>
+        <nav class="topnav" id="myTopnav">
             <ul>
-                <li>Home</li>
-                <li>Catiline</li>
-                <li>Deiotarus</li>
-                <li>Murena</li>
-                <li>Caelius</li>
-                <li>Pompey</li>
-                <li>House</li>
-                <li>Provinces</li>
-                <li>Philippic</li>
+                <li><a href="#Group1" onclick="closeMenu()">Group 1</a></li>
+                <li><a href="#Group2" onclick="closeMenu()">Group 2</a></li>
+                <li><a href="#Group3" onclick="closeMenu()">Group 3</a></li>
+                <li><a href="#Group4" onclick="closeMenu()">Group 4</a></li>
+                <li><a href="#Group5" onclick="closeMenu()">Group 5</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" onclick="toggleMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
 
+        <div class="hero">banner image goes here. use img tag</div>
+
         <main>
-            <h2>Main Goes Here</h2>Cicero has been traditionally considered the master of Latin prose, with Quintilian
-            declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming
-            Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and
-            complicated thoughts with clarity.
-			
+            <section id="Overview">
+                <h2>Overview</h2>
+                <p>
+                    Cicero has been traditionally considered the master of Latin prose, with Quintilian
+                    declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming
+                    Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and
+                    complicated thoughts with clarity.
+                </p>
+            </section>
+
+            <section id="Group1">
+                <h2>Group 1 - Website Name</h2>
+                <h3>Members:</h3> 
+                <p>put member list here. display flex for horizontal list.</p>
+                <div>desktop preview image here. use img tag.</div>
+                <div>mobile preview image here. use img tag.</div>
+                <p>
+                    Cicero has been traditionally considered the master of Latin prose, with Quintilian
+                    declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming
+                    Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and
+                    complicated thoughts with clarity.
+                </p>
+                <button>button</button>
+            </section>
+
+            <section id="Group2">
+                <h2>Group 2 - Website Name</h2>
+                <h3>Members:</h3> 
+                <p>put member list here. display flex for horizontal list.</p>
+                <div>desktop preview image here. use img tag.</div>
+                <div>mobile preview image here. use img tag.</div>
+                <p>
+                    Cicero has been traditionally considered the master of Latin prose, with Quintilian
+                    declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming
+                    Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and
+                    complicated thoughts with clarity.
+                </p>
+                <button>button</button>
+            </section>
+
+            <section id="Group3">
+                <h2>Group 3 - Website Name</h2>
+                <h3>Members:</h3> 
+                <p>put member list here. display flex for horizontal list.</p>
+                <div>desktop preview image here. use img tag.</div>
+                <div>mobile preview image here. use img tag.</div>
+                <p>
+                    Cicero has been traditionally considered the master of Latin prose, with Quintilian
+                    declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming
+                    Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and
+                    complicated thoughts with clarity.
+                </p>
+                <button>button</button>
+            </section>
         </main>
 
-        <aside>
-            <h2>Aside Goes Here</h2><br>Quintilian declaring Cicero was "not the name of a man, but of eloquence
-            itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary
-            medium capable of expressing abstract and complicated
-        </aside>
-
         <footer>
-            <h2>Footer Goes Here</h2>During the chaotic latter half of the first century BC, marked by civil wars and
-            the dictatorship of Gaius Julius Caesar, Cicero championed a return to the traditional republican
-            government.
+            <h2>IUPUI + HH</h2>
+            <p>Put other credits here</p>
             <p>Thanks to Dr. William Helling of IUPUI and w3schools.com (https://www.w3schools.com/css/css_grid.asp) -- Kasper Valtakari</p>
         </footer>
 

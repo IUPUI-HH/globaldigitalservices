@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: header;
+    background-color: yellow;
+    padding: 1em;
+}
+
+nav {
+    grid-area: nav;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+}
+
+nav .icon {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    margin: 0 auto;
+}
+
+nav ul li {
+    padding: 0em 1em;
+    font-size: 1.5em;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    /* red for now, change this later. */
+    color: red;
+    text-decoration: none;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: lightblue; 
+}
+
+main {
+    grid-area: main;
+    background-color: orange;
+    padding: 1em;
+}
+
+main section {
+    padding-bottom: 5em;
+}
+
+/* final section in main content will not add padding below it. */
+main section:last-child {
+    padding-bottom: 0em;
+}
+
+aside {
+    grid-area: aside;
+    background-color: bisque;
+}
+
+footer {
+    grid-area: footer;
+    background-color: green;
+    padding: 1em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'header header header nav nav nav'
+        'hero hero hero hero hero hero'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    grid-gap: .5em;
+    
+}
+
+
+ul li {
+    list-style-type: none;
+}
+
+
+/* FIRST BREAK POINT == to better fit in the header + nav */
+@media only screen and (max-width : 1075px) {
+    body {
+        background: blue;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'nav nav nav nav nav nav' 
+            'hero hero hero hero hero hero'
+            'main main main main main main'
+            'footer footer footer footer footer footer';
+        grid-gap: .5em;
+        padding: .5em;
+    }
+
+    nav ul li {
+        display: inline-block;
+        font-size: 1.5em;
+    }
+
+}
+
+/* SECOND BREAK POINT == compact version of nav bar */
+@media only screen and (max-width : 850px) {
+    body {
+        background-color: red;
+    }
+
+    .topnav ul li:not(:first-child) {display: none;}
+    .topnav ul li.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav {position: relative;}
+    .topnav ul li.icon {
+        position: absolute;
+        right: 0; 
+        top: 0;
+    }
+    
+  .topnav.responsive ul, .topnav.responsive ul li {
+    float: none;
+    display: block;
+  }
+
+  .topnav.responsive ul li {
+    margin-bottom: 1em;
+  }
+
+  /* remove margin on last visible link, which is the second to last <li>. */
+  .topnav.responsive ul li:nth-last-child(2) {
+    margin-bottom: 0em;
+  }
+
+}
+
+/* THIRD BREAK POINT == mobile */
+@media only screen and (max-width : 600px) {
+
+    body {
+        background: fuchsia;
+        width: 100%;
+    }
+
+}
