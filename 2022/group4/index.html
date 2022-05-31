@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Audio & Blind Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="styles/style.css" id="theme">
+    <script src="scripts/accessability.js"></script>
+</head>
+<nav>  
+    <div class="smallmenu">
+    <span id="show1">
+      <a href="#" onClick="document.getElementById('text1').style.display='inline';
+    document.getElementById('hide1').style.display='inline';
+    document.getElementById('show1').style.display='none';" style="text-decoration: none;">
+        + menu</a> 
+      </span>   
+      <span id="hide1" style="display: none;">
+      <a href="#" onClick="document.getElementById('text1').style.display='none';
+    document.getElementById('hide1').style.display='none';
+    document.getElementById('show1').style.display='inline';" style="text-decoration: none;">
+      &ndash; menu</a>
+    </span>
+    </div>
+    <ul id="text1" class="expander">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="screenreader.html">Screen Readers</a></li>
+        <li><a href="webdesign.html">Web Design Practices</a></li>
+        <li><a href="smartphone.html">Smartphones</a></li>
+        <li><a href="othercases.html">Other Technology</a></li>
+    </ul>
+    
+</nav>
+
+<body>
+    <header>
+        <h1>Navigating Technology for Visually Impaired Users</h1>
+        <h2>Visually Impaired in the Digital World</h2>
+        <p>As tech professionals, it is important to look at content and interfaces you create from other  perspectives. Some experts argue that interface creators will never fully understand whether their interfaces are usable or not. This is why an entire field was created solely for user tests and studies. As technology continues its rapid growth, the importance of usability and accessibility continues to be as important as ever. Most people rely on looking at a screen for daily life, how does this affect individuals who can’t see the screen or certain elements on it?  
+		<br>The World Health Organization (WHO) defines vision impairment as a person either having diminished vision acuity at a distance, which can range from mild to blind, or severely diminished near vision acuity. The WHO reports that at least 2.2 billion people are classified as visually impaired in the world. 
+		<br>As such a large group of people live without the privilege of sight, it is important that technology is created and designed in a way that  all users can enjoy and benefit from. Technology which has been created for these users has kept pace with  the rest of the digital worlds. Many page structures and layouts on the web are not compatible with the technology which is available for visually impaired users. It is imperative that interfaces should be created with accessibility for blind users and visually impared in mind. 
+        <br>The following topics cover several important ideas and topics to keep in mind when designing interfaces and creating content for blind and visually impared users.
+        </p>
+    </header>
+
+    <main>
+        <h2>What to know?</h2>        
+            <div class="column-intro">
+                <div class="short-intro">
+                    <div>
+                        <img class="square-img" src="images/screenreader.jpg" alt="screen reader">
+                    </div>
+                    <div class="img-text">
+                        <h3>Screen Readers & Tools</h3>
+                        <p>Learn more about screen reading technology, including built-in and external tools. View examples of this technology and how it works. Gain understanding of how this technology works from a visually impaired user’s perspective. </p>
+                      <a href="screenreader.html"><button type="button">Learn more</button></a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="short-intro">
+                        <img class="square-img" src="images/webdesign.jpg" alt="website design">
+                    <div class="img-text">
+                        <h3>Web Design: Best Practices</h3>
+                        <p>Familiarize yourself with some of the best methods for designing websites to aid in comprehension and navigability for blind users. Compare examples of what might be considered good and bad design, as well as experience what a screen reader might comprehend.</p>
+                       <a href="webdesign.html"><button type="button">Learn more</button></a>      
+                    </div>
+                </div>
+
+                <div class="short-intro">
+                        <img class="square-img" src="images/smartphone.jpg" alt="smartphone">
+                    <div class="img-text">
+                        <h3>Smartphones And Its Accessibility Features</h3>
+                        <p>Understand how mobile technology comes into play and what new challenges smartphones bring to the table. See what accessibility features are currently offered and how they work for the mobile world, as well as apps that have been developed to tackle these issues. </p>
+                       <a href="smartphone.html"><button type="button">Learn more</button></a>
+                    </div>
+                </div>
+
+                <div class="short-intro">
+                        <img class="square-img" src="images/braille-typewriter.jpg" alt="other technology">
+                    <div class="img-text">
+                        <h3>More User Cases and technology</h3>
+                        <p>Read up on other interesting use cases as well as other forms of technology and how it has been adapted for blind and visually impaired users. Learn about some older technology, as well as some new technology. View examples that might inspire more inclusive design practices in the future.</p>
+                       <a href="othercase.html"><button type="button">Learn more</button></a>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <a onclick="highContrast()" class="contrastbutton">
+        <p class="contrastbuttontext">High<br>Contrast</p>
+    </a>
+        <footer>
+            <p>&#169 2022 by Group4, IUPUI & Haaga-Helia AMK</p>
+        </footer>
+</body>
+</html>
