@@ -1,0 +1,65 @@
+/* can make max-width: 70% so the same as other pages- easier to merge later 05/03 Teryn*/
+.img{
+  max-width: 70%;
+  margin-inline-start: 15%;
+}
+.imageCitations{
+  margin-inline-start: 40%;
+  clear: both;
+}
+
+
+aside {
+  width: 30%;
+  padding-left: 15px;
+  /* as on poc.css right and bottom padding help center text  
+  padding-right: 15px;
+  padding-bottom: 15px;
+  */
+  margin-left: 15px;
+  float: right;
+  background-color: lightgray;
+  
+}
+
+/* not necessary as it exists in styles which you have linked Gabi
+blockquote{
+  font-size:10pt;
+}
+.citations{
+  font-size:10pt;
+  text-decoration: underline;
+}
+*/
+/*break point added for images to be larger in tablet view from 1300 is necessary to avoid awkward break in the aside and image 
+not sure who initially added this breakpoint, I just enlarged it Gabi*/
+@media screen and (max-width: 1300px){ 
+.img{
+    max-width: 100%;
+    margin-inline-start: 0%;
+      }
+/*allows aside to be centered sooner so there's not a weird gap as the screen size decreases*/
+    aside{
+      float: none;
+      width: 90%;
+      clear: both;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  /*this not necessary as starts at 1000px*/
+  aside{ 
+  width: 100%;
+  padding-left: 0;
+  margin-left: 0;
+  /*float: center;*/
+  background-color: lightgray; }
+ /*this not necessary as starts at 1000px*/
+.img{
+  max-width: 100%;
+  margin-inline-start: 0%;
+}
+.imageCitations{
+  margin-inline-start: 5%;
+  clear: both;
+  }}

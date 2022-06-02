@@ -1,0 +1,51 @@
+/* Cyberbulling images styles */
+.listInterline li {
+    margin-bottom: 0.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.cyberImg {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.imgBorder {
+    border: solid 1px black;
+}
+
+#pewGraph {
+    float: right;
+    max-width: 70%;
+    margin-left: 10px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    background-color: lightgrey;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 800px) {
+    aside {
+        float: none;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #pewGraph {
+        float: none;
+        width: 100%;
+        min-width: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #pewGraph {
+        min-width: none;
+        width: 90%;
+        margin-left: 0;
+    }
+}
