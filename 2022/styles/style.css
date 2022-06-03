@@ -90,6 +90,9 @@ main section button {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    /* if display: flex is added, remove text decoration on a tag */
+    /* display: flex; */
+    /* margin: 0 auto; */
 }
 
 aside {
