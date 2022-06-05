@@ -85,13 +85,8 @@ main section.flipColor {
     background-color: #f5f5f5;
 }
 
-main section button { 
-    border: none;
-    /* match vertical margin with button vertical padding. */
-    margin: 1em 0em;
-}
-
-main section button a {
+main section a {
+    display: inline-block;
     background-color: #0079c2;
     color: #fff;
     border-radius: 1em;
@@ -104,11 +99,11 @@ main section button a {
     /* margin: 0 auto; */
 }
 
-main section button a:hover {
+main section a:hover {
     background-color: #0095f1;
 }
 
-main section button a:active {
+main section a:active {
     background-color: #003971;
 }
 
