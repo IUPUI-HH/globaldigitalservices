@@ -54,6 +54,10 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+nav ul li a:active {
+    color: rgb(255, 119, 45);
+}
+
 .hero {
     grid-area: hero;
     background-color: lightblue; 
@@ -81,7 +85,13 @@ main section.flipColor {
     background-color: #f5f5f5;
 }
 
-main section button {
+main section button { 
+    border: none;
+    /* match vertical margin with button vertical padding. */
+    margin: 1em 0em;
+}
+
+main section button a {
     background-color: #0079c2;
     color: #fff;
     border-radius: 1em;
@@ -90,9 +100,16 @@ main section button {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    /* if display: flex is added, remove text decoration on a tag */
     /* display: flex; */
     /* margin: 0 auto; */
+}
+
+main section button a:hover {
+    background-color: #0095f1;
+}
+
+main section button a:active {
+    background-color: #003971;
 }
 
 aside {
