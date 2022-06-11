@@ -110,12 +110,38 @@ main section a:active {
     background-color: #003971;
 }
 
+main section h4 {
+    float: left;
+}
+
+/* add non-breaking space after each h4 in main section. */
+main section h4::after {
+    content: "\A0";
+}
+
 main section ul {
     display: flex;
 }
 
+/* add comma after each name in member list. */
+main section ul li::after {
+    content: "\2C \A0";
+}
+
+/* last member doesn't end with comma. */
+main section ul li:last-child::after {
+    content: "";
+}
+
+/* clearfix */
+main section ul::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 main section ul li {
-    margin-right: 3em;
+    /* margin-right: 3em; */
 }
 
 /* no right margin on last child. */
@@ -169,8 +195,12 @@ ul li {
 
 }
 
-/* SECOND BREAK POINT == vertical member list */
-@media only screen and (max-width : 950px) {
+/* SECOND BREAK POINT PT.1 == vertical member list */
+@media only screen and (max-width : 875px) {
+
+    main section h4 {
+        float: none;
+    }
 
     main section ul {
         display: inline;
@@ -178,7 +208,7 @@ ul li {
 
 }
 
-/* THIRD BREAK POINT == compact version of nav bar */
+/* SECOND BREAK POINT PT.2 == compact version of nav bar */
 @media only screen and (max-width : 875px) {
     body {
         /* background-color: red; */
@@ -226,11 +256,10 @@ ul li {
 
 }
 
-/* FOURTH BREAK POINT == mobile */
+/* THIRD BREAK POINT == mobile */
 @media only screen and (max-width : 600px) {
 
     body {
-        /* background: fuchsia; */
         width: 100%;
     }
 
