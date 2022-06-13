@@ -177,6 +177,7 @@ ul li {
 
 .imagePreviews img {
     margin-right: 5em;
+    border: solid black 1px;
 }
 
 .imageResizer {
