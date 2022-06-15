@@ -184,6 +184,30 @@ ul li {
     max-width: 100%;
 }
 
+
+
+/* styles for the details show--hide  */
+summary h3 {
+	display: inline-block;
+}
+
+summary {
+	cursor: pointer;
+}
+
+
+/* top and bottom spacing for paragraphs in the sections */
+
+section p {
+	margin: 1em 0 1em 0;
+}
+
+
+
+
+
+
+
 /* FIRST BREAK POINT == to better fit in the header + nav */
 @media only screen and (max-width : 1175px) {
     body {
