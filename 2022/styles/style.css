@@ -60,7 +60,9 @@ nav ul li a:active {
 
 .hero {
     grid-area: hero;
-    background-color: lightblue; 
+    background-color: white; 
+    justify-content: center;
+    display: flex;
 }
 
 main {
