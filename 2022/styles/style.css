@@ -21,6 +21,7 @@ header {
     background-color: #990002;
     color: #fff;
     padding: 1em;
+	text-align: center;
 }
 
 nav {
@@ -177,10 +178,12 @@ ul li {
     /* justify-content: center; */
 }
 
+/*
 .imagePreviews img {
     margin-right: 5em;
     border: solid black 1px;
 }
+*/
 
 .imageResizer {
     max-width: 100%;
